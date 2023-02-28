@@ -8,7 +8,7 @@ namespace DataStructureAlgorithm
         {
             Console.WriteLine("Welcome to data structure algorithum");
             Console.WriteLine("Please enter an option");
-            Console.WriteLine("1:Permutation of string\n2:Binary search\n3:Insertion Sort\n4:Bubble Sort");
+            Console.WriteLine("1:Permutation of string\n2:Binary search\n3:Insertion Sort\n4:Bubble Sort\n5:Anagram");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
@@ -42,6 +42,9 @@ namespace DataStructureAlgorithm
                     BubbleSort.bubbleSort(array);
                     Console.WriteLine("Sorted array");
                     BubbleSort.printArray(array);
+                    break;
+                case 5:
+                    Anagram.Anagrams();
                     break;
                 default:
                     Console.WriteLine("Please enter right option");
