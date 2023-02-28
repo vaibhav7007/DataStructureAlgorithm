@@ -8,7 +8,7 @@ namespace DataStructureAlgorithm
         {
             Console.WriteLine("Welcome to data structure algorithum");
             Console.WriteLine("Please enter an option");
-            Console.WriteLine("1:Permutation of string\n2:Binary search\n3:Insertion Sort");
+            Console.WriteLine("1:Permutation of string\n2:Binary search\n3:Insertion Sort\n4:Bubble Sort");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
@@ -30,12 +30,18 @@ namespace DataStructureAlgorithm
                     BinarySearch.result(arr, s2);
                     break;
                 case 3:
-                    string[] names = { "Shivani", "Malhar", "Prasanna", "Shraddha" };
+                    string[] names = { "Vaibhav", "Malhar", "Prasanna", "Shraddha" };
                     InsertionSort.InsertSort(names);
                     foreach (var item in names)
                     {
                         Console.WriteLine(item);
                     }
+                    break;
+                case 4:
+                    int[] array = { 5, 9, 4, 6, 8 };
+                    BubbleSort.bubbleSort(array);
+                    Console.WriteLine("Sorted array");
+                    BubbleSort.printArray(array);
                     break;
                 default:
                     Console.WriteLine("Please enter right option");
