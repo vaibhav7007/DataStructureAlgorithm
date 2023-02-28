@@ -30,7 +30,7 @@ namespace DataStructureAlgorithm
                     BinarySearch.result(arr, s2);
                     break;
                 case 3:
-                    string[] names = { "Shivani", "Malhar", "Prasanna", "Shraddha" };
+                    string[] names = { "Vaibhav", "Malhar", "Prasanna", "Shraddha" };
                     InsertionSort.InsertSort(names);
                     foreach (var item in names)
                     {
