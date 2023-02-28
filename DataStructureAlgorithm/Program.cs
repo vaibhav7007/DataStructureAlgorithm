@@ -8,7 +8,7 @@ namespace DataStructureAlgorithm
         {
             Console.WriteLine("Welcome to data structure algorithum");
             Console.WriteLine("Please enter an option");
-            Console.WriteLine("1:Permutation of string\n2:Binary search\n3:Insertion Sort\n4:Bubble Sort\n5:Anagram");
+            Console.WriteLine("1:Permutation of string\n2:Binary search\n3:Insertion Sort\n4:Bubble Sort\n5:Anagram\n6:Prime number within range");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
@@ -45,6 +45,9 @@ namespace DataStructureAlgorithm
                     break;
                 case 5:
                     Anagram.Anagrams();
+                    break;
+                case 6:
+                    PrimeNumberWithinRange.FindPrimeNumbers();
                     break;
                 default:
                     Console.WriteLine("Please enter right option");
